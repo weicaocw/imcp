@@ -1,15 +1,12 @@
 import os
 import sys
 
-import matplotlib
 import pandas as pd
-
-from imcp import mcp_score, imcp_score, plot_mcp_curve, plot_imcp_curve
-
-matplotlib.use("Agg")
 
 REPO = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, REPO)
+from imcp import mcp_score, imcp_score, plot_mcp_curve, plot_imcp_curve
+
 
 OUT = os.path.join(REPO, "imcp_demo_out")
 os.makedirs(OUT, exist_ok=True)
