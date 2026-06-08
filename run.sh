@@ -26,7 +26,7 @@ fi
 export PIP_REQUIRE_VIRTUALENV=true            # pip MUST be inside a venv; never --user
 export OMP_NUM_THREADS="${SLURM_CPUS_PER_TASK:-1}"   # don't grab the whole node
 
-REPO_DIR="$HOME/imcp"               # <-- path to the repo (must contain imcp/, tests/, the .py)
+REPO_DIR="$HOME/code/python/imcp"               # <-- path to the repo (must contain imcp/, tests/, the .py)
 
 # 1) Software stack via Lmod. python/3.11.5 == cp311, matching the wheelhouse
 #    (torch 2.12.0 cp311 x86-64-v3, scikit_learn 1.8.0 cp311).
