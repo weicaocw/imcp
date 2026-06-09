@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --account=def-thocking_cpu
 #SBATCH --job-name=imcp
-#SBATCH --time=00:05:00
+#SBATCH --time=00:15:00
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=8G
 #SBATCH --output=imcp-%j.out
